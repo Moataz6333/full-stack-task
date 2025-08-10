@@ -26,11 +26,16 @@ cp .env.example .env
 composer install
 php artisan key:generate
 # Configure your .env database settings
-php artisan migrate 
+php artisan migrate --seed
 php artisan serve
 ```
 
-
+admin: 
+email : admin@admin.com 
+password: password
+user: 
+email : user@user.com 
+password: password
 
 ### 2. Setup Vue Frontend
 
